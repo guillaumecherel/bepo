@@ -1,0 +1,96 @@
+key	Description	ALT + key	CTRL + key	g key (goto)	v key (view)
+a	insert after selected text	select whole object		last buffer
+A	insert at line end			
+b	select to previous word start	select to previous WORD start	scroll one page up	window bottom	cursor on bottom
+B	extend to previous word start	extend to previous WORD start		
+c	change selected text	change selected text without yanking		window center	center cursor (vertically)
+C	copy selection on next lines	copy selection on previous lines		
+d	erase selected text	erase selected text without yanking		
+D				
+e	select to next word end	select to next WORD end		buffer end
+E	extend to next word end	extend to next WORD end		
+f	select to next character included	select to previous character included	scroll one page down	file
+F	extend to next character included	extend to previous character included		
+g	go to location			
+G	extend to location			
+h	move left	select to line begin		line begin	scroll left
+H	extend left	extend to line begin		
+i	insert before selected text	select inner object	jump forward in jump list	line begin (non blank)
+I	insert at line begin			
+j	move down	join lines		buffer bottom	scroll down
+J	extend down	join lines and select spaces		
+k	move up	keep selections matching given regex		buffer top	scroll up
+K	extend up	keep selections not matching given regex		
+l	move right	select to line end	force screen redraw	line end	scroll right
+L	extend right	extend to line end		
+m	select to matching character	merge contiguous selections together			center cursor (horizontally)
+M	extend to matching character			
+n	select next current search pattern match	select previous current search pattern match		
+N	extend with next current search pattern match	extend with previous current search pattern match		
+o	insert on new line below	add a new empty line below	jump backward in jump list	
+O	insert on new line above	add a new empty line above		
+p	paste after selected text	paste every yanked selection after selected text		
+P	paste before selected text	paste every yanked selection before selected text		
+q	replay recorded macro			
+Q	start or end macro recording			
+r	replace with character			
+R	replace selected text with paired yanked text	replace selected text with all yanked texts		
+s	select regex matches in selected text	split selected text on line ends	push current selections in jump list	
+S	split selected text on regex matches			
+t	select to next character	select to previous character		window top	cursor on top
+T	extend to next character	extend to previous character		
+u	undo	move backward in history		
+U	redo	move forward in history		
+v	manipulate view				center cursor (vertically)
+V	lock view mode			
+w	select to next word start	select to next WORD start		
+W	extend to next word start	extend to next WORD start		
+x	select line	extend selections to whole lines		
+X	extend line	crop selections to whole lines		
+y	yank selected text			
+Y				
+z	restore selections	combine selections from register		
+Z	save selections	combine selections to register		
+!	insert command output	append command output		
+$	pipe each selection through shell command and keep the ones whose command succeed			
+|	pipe each selection through filter and replace with output	pipe each selection through command and ignore output		
+&	align selection cursors	copy indentation		
+@	convert tabs to spaces in selections	convert spaces to tabs in selections		
+<	deindent	deindent, not including incomplete indent		
+>	indent	indent, including empty lines		
+%	select whole buffer			
+'	rotate main selection	rotate main selection backwards		
+"	choose register	rotate selections content		
+;	reduce selections to their cursor	swap selections cursor and anchor		
+*	set search pattern to main selection content	set search pattern to main selection content, do not detect words		
+/	select next given regex match	select previous given regex match		
+?	extend with next given regex match	extend with previous given regex match		
+[	select to object start	select to inner object start		
+]	select to object end	select to inner object end		
+{	extend to object start	extend to inner object start		
+}	extend to object end	extend to inner object end		
+(				
+)				
+`	convert to lower case in selections	swap case in selections		
+~	convert to upper case in selections			
+,	user mappings			
+.	repeat last insert command	repeat last object or t/f selection command		last buffer change
+\	disable hooks			
+:	enter command prompt	ensure selection cursor is after anchor		
+#				
+^				
+-				
+_				
+=				
++				
+Up	move up			
+Down	move down			
+Left	move left			
+Right	move right			
+Home	select to line begin			
+End	select to line end			
+PageDown	scroll one page down			
+PageUp	scroll one page up			
+Space	remove all selection except main	remove main selection		
+Backspace	remove count			
+Escape	end macro recording	
